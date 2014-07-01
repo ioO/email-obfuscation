@@ -4,20 +4,21 @@ Email obfuscation
 Simple python cli to generate html entities to obfuscate email address.
 
 ##Usage
-    ```bash
-    [user@host]$ python email-obfuscation.py -h
 
-    usage: email-obfuscation.py [-h] [-m] email
+```bash
+[user@host]$ python email-obfuscation.py -h
 
-    Generate a string to obfuscate your email address
+usage: email-obfuscation.py [-h] [-m] email
 
-    positional arguments:
-    email              email address to obfuscate
+Generate a string to obfuscate your email address
 
-    optional arguments:
-    -h, --help         show this help message and exit
-    -m, --with-mailto  Return a string link with mailto obfuscated
-    ```
+positional arguments:
+email              email address to obfuscate
+
+optional arguments:
+-h, --help         show this help message and exit
+-m, --with-mailto  Return a string link with mailto obfuscated
+```
 
 Return a simple string of mixed html entities with ascii decimal and with ascii hexadecimal
     ```bash
