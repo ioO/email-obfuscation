@@ -4,9 +4,11 @@ import argparse
 import random
 
 parser = argparse.ArgumentParser(
-            description='Generate a string to obfuscate your email address')
+        description='Generate a string to obfuscate your email address')
+
 parser.add_argument('email', type=str, help='email address to obfuscate')
-parser.add_argument('-m', '--with-mailto', help='Return a string link with mailto obfuscated')
+parser.add_argument('-m', '--with-mailto', dest='mailto', action='store_true', 
+                    help='Return a string link with mailto obfuscated')
 
 args = parser.parse_args()
 
