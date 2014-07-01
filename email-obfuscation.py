@@ -8,4 +8,6 @@ parser.add_argument('email', type=str, help='email address to obfuscate')
 
 args = parser.parse_args()
 
-print(args.email)
+chr_list = list(args.email)
+
+print(chr_list)
