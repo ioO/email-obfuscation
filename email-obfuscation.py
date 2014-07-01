@@ -1,6 +1,7 @@
 #!/bin/env python
 
 import argparse
+import random
 
 parser = argparse.ArgumentParser(
             description='Generate a string to obfuscate your email address')
