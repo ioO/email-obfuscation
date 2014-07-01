@@ -8,6 +8,7 @@ parser.add_argument('email', type=str, help='email address to obfuscate')
 
 args = parser.parse_args()
 
-chr_list = list(args.email)
+# get args.email and transform char in list of ascii code
+ascii_char_list = list(ord(char) for char in list(args.email))
 
-print(chr_list)
+print(ascii_char_list)
