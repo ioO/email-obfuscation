@@ -17,4 +17,5 @@ ascii_char_list = list(ord(char) for char in list(args.email))
 transform = lambda s: random.choice(
                 ('&#'+str(s)+';', str(hex(s)).replace('0', '&#', 1)+';'))
 
-print(ascii_char_list)
+#print a string of html entities
+print(''.join(list(map(transform, ascii_char_list))))
